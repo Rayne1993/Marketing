@@ -1,0 +1,199 @@
+@media (min-width: 500px) {
+  body header .navigation {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0px 39%;
+  }
+}
+body header .navigation .top-page {
+  background-color: #293462;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  body header .navigation .top-page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+body header .navigation .top-page h1 {
+  color: #F7BE16;
+  font-family: 'Bangers', cursive;
+  border: 1px solid black;
+}
+body header .navigation .top-page .navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  body header .navigation .top-page .navbar {
+    flex-direction: row;
+  }
+}
+body header .navigation .top-page .navbar a {
+  font-family: 'Merriweather', serif;
+  margin-top: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin: 20px 0px 20px 0px;
+}
+@media (min-width: 500px) {
+  body header .navigation .top-page .navbar a {
+    text-align: center;
+    margin: 20px;
+  }
+}
+body header .navigation .top-page .navbar #login {
+  font-family: 'Merriweather', serif;
+  color: black;
+  border: 1px solid black;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+@media (min-width: 500px) {
+  body header .navigation .top-page .navbar #login {
+    text-align: center;
+    padding: 5px 20px;
+  }
+}
+body header .navigation .top-image .image img {
+  width: 100%;
+  height: auto;
+}
+body header .navigation .top-image h1 {
+  font-family: 'Merriweather', serif;
+}
+body header .navigation .top-image p {
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+}
+@media (min-width: 500px) {
+  body .home {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0px 39%;
+  }
+}
+body .home .story1 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 500px) {
+  body .home .story1 {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+  }
+}
+body .home .story1 .content h1 {
+  font-family: 'Merriweather', serif;
+  border: 1px solid red;
+}
+body .home .story1 .content p {
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  border: 1px solid blue;
+}
+body .home .story1 .content ul {
+  font-family: 'Merriweather', serif;
+  border: 1px solid pink;
+}
+body .home .story1 .image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  body .home .story2 {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+body .home .story2 .content h2 {
+  font-size: 20px;
+  border: 1px solid red;
+}
+body .home .story2 .content p {
+  font-size: 16px;
+  border: 1px solid blue;
+}
+body .home .story2 .content ul {
+  border: 1px solid pink;
+}
+body .home .story2 .image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  body .home .story3 {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+  }
+}
+body .home .story3 .content h2 {
+  font-size: 20px;
+  border: 1px solid red;
+}
+body .home .story3 .content p {
+  border: 1px solid blue;
+}
+body .home .story3 .content ul {
+  border: 1px solid pink;
+}
+body .home .story3 .image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  body .home .story4 {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+body .home .story4 .content h2 {
+  font-size: 20px;
+  border: 1px solid red;
+}
+body .home .story4 .content p {
+  border: 1px solid blue;
+}
+body .home .story4 .content ul {
+  border: 1px solid pink;
+}
+body .home .story4 .image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  body .home .story5 {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+  }
+}
+body .home .story5 .content h2 {
+  border: 1px solid red;
+}
+body .home .story5 .content p {
+  border: 1px solid blue;
+}
+body .home .story5 .content ul {
+  border: 1px solid pink;
+}
+body .home .story5 .image img {
+  width: 100%;
+  height: auto;
+}
