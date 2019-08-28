@@ -1,0 +1,53 @@
+header nav {
+    .flexColumn;
+
+    @media @tablet {
+        flex-direction: row;
+    }
+    @media @desktop {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    a {
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: @yellow;
+        }
+        @media @tablet {
+            border: none;
+            padding: 50px 20px 0 20px;
+            &:first-child {
+                border: none;
+            }
+            &:last-child {
+                padding-top: 30px;
+            }
+        }
+    }
+
+        button {
+            padding: 10px 100px;
+            border-radius: 10px;
+            border: 1px solid @bordercolor;
+            background: @yellow;
+            color: @darkteal;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition: all .2s ease-in-out; 
+            @media @tablet {
+                padding: 10px 25px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            &:hover {
+                border: 1px solid @darkteal;
+                background: white;
+                transform: scale(1.2); 
+        }
+    }
+}
+
