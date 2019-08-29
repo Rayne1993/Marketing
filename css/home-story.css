@@ -1,6 +1,6 @@
 /*Variables*/
 /*Mixins*/
-.h1-style {
+.h2-style {
   font-family: 'Merriweather', serif;
   font-size: 20px;
   color: #F7BE16;
@@ -26,19 +26,7 @@
   cursor: pointer;
 }
 /* Global */
-h1 {
-  font-size: 20px;
-  font-family: 'Merriweather', serif;
-}
-h2 {
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
-}
-p {
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
-}
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   body header .navigation {
     display: flex;
     flex-direction: column;
@@ -57,34 +45,50 @@ body header .navigation .top-page {
   text-align: center;
 }
 @media (min-width: 500px) {
-  body header .navigation .top-page {
+  body header .navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: space-evenly;
   }
 }
-body header .navigation .top-page h1 {
-  font-size: 30px;
+@media (min-width: 800px) {
+  body header .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-evenly;
+  }
+}
+body header .navigation #logo {
+  font-size: 2rem;
   color: #F7BE16;
   font-family: 'Bangers', cursive;
   margin-left: 5%;
 }
-body header .navigation .top-page .navbar {
+body header .navigation .navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: null;
+  align-items: space-between;
 }
 @media (min-width: 500px) {
-  body header .navigation .top-page .navbar {
+  body header .navigation .navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: space-between;
   }
 }
-body header .navigation .top-page .navbar a {
+@media (min-width: 800px) {
+  body header .navigation .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
+body header .navigation .navbar a {
   font-family: 'Merriweather', serif;
   margin-top: 0px;
   text-decoration: none;
@@ -92,19 +96,25 @@ body header .navigation .top-page .navbar a {
   color: white;
   margin: 0 0 20px 0;
 }
-body header .navigation .top-page .navbar a:hover {
+body header .navigation .navbar a:hover {
   color: #F7BE16;
 }
-body header .navigation .top-page .navbar a .pointer {
+body header .navigation .navbar a .pointer {
   cursor: pointer;
 }
-@media (min-width: 500px) {
-  body header .navigation .top-page .navbar a {
+@media (min-width: 800px) {
+  body header .navigation .navbar a {
     text-align: center;
     margin: 20px;
   }
 }
-body header .navigation .top-page .navbar #login {
+@media (min-width: 500px) {
+  body header .navigation .navbar a {
+    text-align: center;
+    margin: 20px;
+  }
+}
+body header .navigation .navbar #login {
   font-family: 'Merriweather', serif;
   color: #216583;
   border: 1px solid black;
@@ -112,86 +122,50 @@ body header .navigation .top-page .navbar #login {
   border-radius: 5px;
   padding: 10px 20px;
 }
-body header .navigation .top-page .navbar #login:hover {
+body header .navigation .navbar #login:hover {
   color: hsl(228, 41%, 27%);
   background-color: white;
 }
-@media (min-width: 500px) {
-  body header .navigation .top-page .navbar #login {
+@media (min-width: 800px) {
+  body header .navigation .navbar #login {
     text-align: center;
     padding: 5px 20px;
   }
 }
-body header .navigation .top-image {
+body header .top-image {
   margin-bottom: 10px;
   border-bottom: 1px dashed black;
 }
-@media (min-width: 500px) {
-  body header .navigation .top-image .image {
+@media (min-width: 800px) {
+  body header .top-image .image {
     width: 70%;
     margin: 0 auto;
   }
 }
-body header .navigation .top-image .image img {
+body header .top-image .image img {
   width: 100%;
   height: auto;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 500px) {
-  body header .navigation .top-image .welcome-block {
+@media (min-width: 800px) {
+  body header .top-image .welcome-block {
     width: 70%;
     margin: 0 auto;
     text-align: justify;
   }
 }
-body header .navigation .top-image .welcome-block h1 {
+body header .top-image .welcome-block h2 {
   font-family: 'Merriweather', serif;
   font-size: 20px;
   color: #F7BE16;
   color: #216583;
 }
-body header .navigation .top-image .welcome-block p {
+body header .top-image .welcome-block p {
   text-align: justify;
   font-size: 16px;
   font-family: 'Merriweather', serif;
 }
-@media (min-width: 500px) {
-  body .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 0px auto;
-  }
-}
-body .home .story1 {
-  margin-bottom: 10px;
-  border-bottom: 1px dashed #00818A;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 500px) {
-  body .home .story1 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-}
-body .home .story1 .content h1 {
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  color: #F7BE16;
-}
-body .home .story1 .content p {
-  text-align: justify;
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
-}
-body .home .story1 .content .actions .button {
+body header .top-image .welcome-block .actions .button {
   background: #00818A;
   color: white;
   text-decoration: none;
@@ -202,44 +176,97 @@ body .home .story1 .content .actions .button {
   font-family: 'Merriweather', serif;
   font-size: 16px;
 }
-body .home .story1 .content .actions .button:hover {
+body header .top-image .welcome-block .actions .button:hover {
   opacity: 0.7;
 }
-body .home .story1 .content .actions .button .pointer {
+body header .top-image .welcome-block .actions .button .pointer {
   cursor: pointer;
 }
-body .home .story1 .image img {
+@media (min-width: 800px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+.home .story1 {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #00818A;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .home .story1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.home .story1 .content h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  color: #F7BE16;
+}
+.home .story1 .content p {
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+}
+.home .story1 .content .actions .button {
+  background: #00818A;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+.home .story1 .content .actions .button:hover {
+  opacity: 0.7;
+}
+.home .story1 .content .actions .button .pointer {
+  cursor: pointer;
+}
+.home .story1 .image img {
   width: 100%;
   height: auto;
 }
-@media (min-width: 500px) {
-  body .home .left-pic {
+@media (min-width: 800px) {
+  .home .left-pic {
     display: flex;
     flex-direction: row;
   }
 }
-@media (min-width: 500px) {
-  body .home .left-pic .content p {
+@media (min-width: 800px) {
+  .home .left-pic .content p {
     padding-right: 20px;
   }
 }
-@media (min-width: 500px) {
-  body .home .right-pic .content {
+@media (min-width: 800px) {
+  .home .right-pic .content {
     padding-left: 20px;
   }
 }
-body footer {
+footer {
   width: 100%;
-  background-color: hsl(228, 41%, 27%);
+  background-color: hsl(228, 41%, 37%);
   padding: 20px 0px 0px 10px;
   position: absolute;
   left: 0px;
   right: 0;
 }
-body footer .copy-right {
+footer .copy-right {
   color: white;
 }
-body footer .footer-nav {
+footer .footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,8 +274,8 @@ body footer .footer-nav {
   text-align: center;
   padding-bottom: 20px;
 }
-@media (min-width: 500px) {
-  body footer .footer-nav {
+@media (min-width: 800px) {
+  footer .footer-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,15 +285,15 @@ body footer .footer-nav {
     padding-bottom: 20px;
   }
 }
-body footer .footer-nav .foot-navbar .fa {
+footer .footer-nav .foot-navbar .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 1.5rem;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   color: white;
 }
-body footer .footer-nav .foot-navbar .fa:hover {
+footer .footer-nav .foot-navbar .fa:hover {
   color: #F7BE16;
 }
