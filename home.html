@@ -6,22 +6,122 @@
     <meta charset="utf-8">
     <title>Refugee Stories-Home</title>
     <meta name="description" content="Refugee Stories">
-    <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home-css/index.css">
+
 
 </head>
 
 <body>
     <nav class="nav-container">
-        <a class="nav-item" href="#"> About Us </a>
-        <a class="nav-item" href="#"> Submit your Story </a>
+        <h1 class="nav-logo"> Refugee Stories </h1>
+        <a class="nav-item" href="#"> Home </a>
+        <a class="nav-item" href="#"> About </a>
         <a class="nav-item" href="#"> Stories </a>
-        <a class="nav-item" href="#"> Connect </a>
+        <button class="nav-button" onClick="window.location.href='#'"> Sign-Up/Login </button>
 
     </nav>
 
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" src="home-img/jordan_refugee.jpg" alt="First slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua." </h3>
+                    <a href="#"> Read More </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="view">
+                    <img class="d-block w-100" src="home-img/kenya_refugee.jpg" alt="Second slide">
+                    <div class="mask rgba-black-strong"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua."</h3>
+                    <a href="#"> Read More </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="view">
+                    <img class="d-block w-100" src="home-img/syrian-refugees.jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua." </h3>
+                    <a href="#"> Read More </a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-    <script src="js/scripts.js"></script>
+
+
+
+    <div class="info-container">
+        <h1> Welcome, to Refugee Stories. </h1>
+        <div class="info-item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium nibh eget pellentesque porta. Integer
+            ornare gravida sem id interdum. Quisque in libero massa. Maecenas pharetra vulputate interdum. Cras mattis,
+            tortor fermentum auctor molestie, lectus purus bibendum leo, in tincidunt orci libero in eros. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Proin hendrerit leo vitae vulputate pulvinar. Sed quis cursus tellus.
+
+            Phasellus placerat, mauris et pellentesque vestibulum, neque enim porttitor arcu, at facilisis turpis risus
+            tincidunt augue. Donec pretium et dolor quis ornare. Cras dui justo, dapibus convallis ante suscipit,
+            pharetra rutrum lorem. Nam eu aliquam eros. Curabitur viverra tempor lectus, aliquam luctus tellus faucibus
+            quis. Donec lacinia erat at lectus fringilla, nec laoreet felis cursus. Aliquam vestibulum augue venenatis
+            scelerisque placerat. Donec vitae malesuada tortor. Praesent ornare auctor pharetra. Sed ligula massa,
+            bibendum nec elit nec, condimentum pellentesque est. Praesent malesuada blandit massa vel bibendum. Nullam
+            vulputate magna ut orci vestibulum, pharetra efficitur dui commodo. Duis tortor orci, suscipit in aliquam
+            vitae, condimentum ac ipsum. In scelerisque nec urna ac ultricies. Vivamus commodo tincidunt ex, at
+            scelerisque quam sollicitudin at.
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
 </body>
+
+<footer class="footer-container">
+    <a href="#" class="fa fa-github"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-facebook"></a>
+    <p class="footer-copyright"> Copyright 2019 </p>
+
+</footer>
 
 </html>
