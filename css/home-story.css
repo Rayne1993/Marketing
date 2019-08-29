@@ -39,11 +39,6 @@ p {
   font-family: 'Merriweather', serif;
 }
 @media (min-width: 500px) {
-  body {
-    padding-top: 65px;
-  }
-}
-@media (min-width: 500px) {
   body header .navigation {
     display: flex;
     flex-direction: column;
@@ -63,11 +58,6 @@ body header .navigation .top-page {
 }
 @media (min-width: 500px) {
   body header .navigation .top-page {
-    height: 75px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -116,14 +106,15 @@ body header .navigation .top-page .navbar a .pointer {
 }
 body header .navigation .top-page .navbar #login {
   font-family: 'Merriweather', serif;
-  color: black;
+  color: #216583;
   border: 1px solid black;
-  background-color: gainsboro;
+  background-color: #F7BE16;
   border-radius: 5px;
   padding: 10px 20px;
 }
 body header .navigation .top-page .navbar #login:hover {
-  color: #F7BE16;
+  color: hsl(228, 41%, 27%);
+  background-color: white;
 }
 @media (min-width: 500px) {
   body header .navigation .top-page .navbar #login {
@@ -239,7 +230,6 @@ body .home .story1 .image img {
 }
 body footer {
   width: 100%;
-  height: 50px;
   background-color: hsl(228, 41%, 27%);
   padding: 20px 0px 0px 10px;
   position: absolute;
@@ -254,22 +244,29 @@ body footer .footer-nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
 }
 @media (min-width: 500px) {
   body footer .footer-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: null;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
 }
-body footer .footer-nav .foot-navbar a {
-  margin: 0px 10px;
-  color: white;
-  font-family: 'Merriweather', serif;
+body footer .footer-nav .foot-navbar .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
   text-decoration: none;
+  margin: 5px 2px;
+  color: white;
 }
-body footer .footer-nav .foot-navbar a:hover {
+body footer .footer-nav .foot-navbar .fa:hover {
   color: #F7BE16;
 }
