@@ -147,7 +147,7 @@ h4 {
 p,
 a,
 button {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 header nav {
   display: flex;
@@ -343,7 +343,7 @@ header .logo .break {
   position: relative;
   width: 50%;
   margin: 20px;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 6px 6px 8px grey;
   border-radius: 10px;
 }
 .card .image {
@@ -351,6 +351,9 @@ header .logo .break {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.one .card:first-child a {
+  padding: 10px 5px;
 }
 .cardContainer {
   position: absolute;
@@ -384,6 +387,7 @@ header .logo .break {
   padding-top: 10px;
   width: 50px;
   font-size: 3.5rem;
+  text-decoration: none;
 }
 .cardContainer .text a:hover {
   color: #F7BE16;
