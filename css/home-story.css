@@ -1,13 +1,16 @@
 /*Variables*/
+html {
+  font-size: 10px;
+}
 /*Mixins*/
 .h2-style {
   font-family: 'Merriweather', serif;
-  font-size: 20px;
+  font-size: 2rem;
   color: #F7BE16;
 }
 .p-style {
   text-align: justify;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Merriweather', serif;
 }
 .read-more {
@@ -25,27 +28,20 @@
 .read-more .pointer {
   cursor: pointer;
 }
-/* Global */
-@media (min-width: 800px) {
-  body header .navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: null;
-    width: 100%;
-    margin: 0px auto;
-  }
+body header .navigation {
+  width: 100%;
+  margin: 0px auto;
 }
 body header .navigation .top-page {
   background-color: hsl(228, 41%, 27%);
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: null;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
+  align-items: null;
 }
 @media (min-width: 500px) {
-  body header .navigation {
+  body header .navigation .top-page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,15 +49,15 @@ body header .navigation .top-page {
   }
 }
 @media (min-width: 800px) {
-  body header .navigation {
+  body header .navigation .top-page {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: space-evenly;
   }
 }
 body header .navigation #logo {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #F7BE16;
   font-family: 'Bangers', cursive;
   margin-left: 5%;
@@ -86,9 +82,11 @@ body header .navigation .navbar {
     flex-direction: row;
     justify-content: center;
     align-items: space-between;
+    align-items: center;
   }
 }
 body header .navigation .navbar a {
+  font-size: 1.6rem;
   font-family: 'Merriweather', serif;
   margin-top: 0px;
   text-decoration: none;
@@ -135,6 +133,7 @@ body header .navigation .navbar #login:hover {
 body header .top-image {
   margin-bottom: 10px;
   border-bottom: 1px dashed black;
+  padding-bottom: 30px;
 }
 @media (min-width: 800px) {
   body header .top-image .image {
@@ -156,13 +155,13 @@ body header .top-image .image img {
 }
 body header .top-image .welcome-block h2 {
   font-family: 'Merriweather', serif;
-  font-size: 20px;
+  font-size: 2rem;
   color: #F7BE16;
   color: #216583;
 }
 body header .top-image .welcome-block p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Merriweather', serif;
 }
 body header .top-image .welcome-block .actions .button {
@@ -183,7 +182,7 @@ body header .top-image .welcome-block .actions .button .pointer {
   cursor: pointer;
 }
 @media (min-width: 800px) {
-  .home {
+  body .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,33 +191,37 @@ body header .top-image .welcome-block .actions .button .pointer {
     margin: 0px auto;
   }
 }
-.home .story1 {
+body .home .story1:last-child {
+  border: none;
+}
+body .home .story1 {
   margin-bottom: 10px;
   border-bottom: 1px dashed #00818A;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 800px) {
-  .home .story1 {
+  body .home .story1 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
   }
 }
-.home .story1 .content h2 {
+body .home .story1 .content h2 {
   font-family: 'Merriweather', serif;
-  font-size: 20px;
+  font-size: 2rem;
   color: #F7BE16;
 }
-.home .story1 .content p {
+body .home .story1 .content p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Merriweather', serif;
 }
-.home .story1 .content .actions .button {
+body .home .story1 .content .actions .button {
   background: #00818A;
   color: white;
   text-decoration: none;
@@ -226,36 +229,37 @@ body header .top-image .welcome-block .actions .button .pointer {
   border-radius: 3px;
   border: none;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  font-size: 1.6rem;
   font-family: 'Merriweather', serif;
-  font-size: 16px;
 }
-.home .story1 .content .actions .button:hover {
+body .home .story1 .content .actions .button:hover {
   opacity: 0.7;
 }
-.home .story1 .content .actions .button .pointer {
+body .home .story1 .content .actions .button .pointer {
   cursor: pointer;
 }
-.home .story1 .image img {
+body .home .story1 .image img {
   width: 100%;
   height: auto;
 }
 @media (min-width: 800px) {
-  .home .left-pic {
+  body .home .left-pic {
     display: flex;
     flex-direction: row;
   }
 }
 @media (min-width: 800px) {
-  .home .left-pic .content p {
+  body .home .left-pic .content p {
     padding-right: 20px;
   }
 }
 @media (min-width: 800px) {
-  .home .right-pic .content {
+  body .home .right-pic .content {
     padding-left: 20px;
   }
 }
-footer {
+body footer {
   width: 100%;
   background-color: hsl(228, 41%, 37%);
   padding: 20px 0px 0px 10px;
@@ -263,10 +267,11 @@ footer {
   left: 0px;
   right: 0;
 }
-footer .copy-right {
+body footer .copy-right {
   color: white;
+  font-size: 1.6rem;
 }
-footer .footer-nav {
+body footer .footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -275,7 +280,7 @@ footer .footer-nav {
   padding-bottom: 20px;
 }
 @media (min-width: 800px) {
-  footer .footer-nav {
+  body footer .footer-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,15 +290,15 @@ footer .footer-nav {
     padding-bottom: 20px;
   }
 }
-footer .footer-nav .foot-navbar .fa {
+body footer .footer-nav .foot-navbar .fa {
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 3rem;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   color: white;
 }
-footer .footer-nav .foot-navbar .fa:hover {
+body footer .footer-nav .foot-navbar .fa:hover {
   color: #F7BE16;
 }
