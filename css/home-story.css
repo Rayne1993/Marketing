@@ -1,0 +1,304 @@
+/*Variables*/
+html {
+  font-size: 10px;
+}
+/*Mixins*/
+.h2-style {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #F7BE16;
+}
+.p-style {
+  text-align: justify;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+.read-more {
+  background: #00818A;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.read-more:hover {
+  opacity: 0.7;
+}
+.read-more .pointer {
+  cursor: pointer;
+}
+body header .navigation {
+  width: 100%;
+  margin: 0px auto;
+}
+body header .navigation .top-page {
+  background-color: hsl(228, 41%, 27%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: null;
+}
+@media (min-width: 500px) {
+  body header .navigation .top-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-evenly;
+  }
+}
+@media (min-width: 800px) {
+  body header .navigation .top-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-evenly;
+  }
+}
+body header .navigation #logo {
+  font-size: 3rem;
+  color: #F7BE16;
+  font-family: 'Bangers', cursive;
+  margin-left: 5%;
+}
+body header .navigation .navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+@media (min-width: 500px) {
+  body header .navigation .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
+@media (min-width: 800px) {
+  body header .navigation .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    align-items: center;
+  }
+}
+body header .navigation .navbar a {
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+  margin-top: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 20px 0;
+}
+body header .navigation .navbar a:hover {
+  color: #F7BE16;
+}
+body header .navigation .navbar a .pointer {
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  body header .navigation .navbar a {
+    text-align: center;
+    margin: 20px;
+  }
+}
+@media (min-width: 500px) {
+  body header .navigation .navbar a {
+    text-align: center;
+    margin: 20px;
+  }
+}
+body header .navigation .navbar #login {
+  font-family: 'Merriweather', serif;
+  color: #216583;
+  border: 1px solid black;
+  background-color: #F7BE16;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+body header .navigation .navbar #login:hover {
+  color: hsl(228, 41%, 27%);
+  background-color: white;
+}
+@media (min-width: 800px) {
+  body header .navigation .navbar #login {
+    text-align: center;
+    padding: 5px 20px;
+  }
+}
+body header .top-image {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed black;
+  padding-bottom: 30px;
+}
+@media (min-width: 800px) {
+  body header .top-image .image {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+body header .top-image .image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 800px) {
+  body header .top-image .welcome-block {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+body header .top-image .welcome-block h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #F7BE16;
+  color: #216583;
+}
+body header .top-image .welcome-block p {
+  text-align: justify;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+body header .top-image .welcome-block .actions .button {
+  background: #00818A;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+body header .top-image .welcome-block .actions .button:hover {
+  opacity: 0.7;
+}
+body header .top-image .welcome-block .actions .button .pointer {
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  body .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+body .home .story1:last-child {
+  border: none;
+}
+body .home .story1 {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #00818A;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  body .home .story1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .home .story1 .content h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #F7BE16;
+}
+body .home .story1 .content p {
+  text-align: justify;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+body .home .story1 .content .actions .button {
+  background: #00818A;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+body .home .story1 .content .actions .button:hover {
+  opacity: 0.7;
+}
+body .home .story1 .content .actions .button .pointer {
+  cursor: pointer;
+}
+body .home .story1 .image img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  body .home .left-pic {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 800px) {
+  body .home .left-pic .content p {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 800px) {
+  body .home .right-pic .content {
+    padding-left: 20px;
+  }
+}
+body footer {
+  width: 100%;
+  background-color: hsl(228, 41%, 37%);
+  padding: 20px 0px 0px 10px;
+  position: absolute;
+  left: 0px;
+  right: 0;
+}
+body footer .copy-right {
+  color: white;
+  font-size: 1.6rem;
+}
+body footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 800px) {
+  body footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+body footer .footer-nav .foot-navbar .fa {
+  padding: 20px;
+  font-size: 3rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+body footer .footer-nav .foot-navbar .fa:hover {
+  color: #F7BE16;
+}
